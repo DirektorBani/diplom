@@ -20,7 +20,8 @@ spec:
           env:
             - name: ATLANTIS_REPO_ALLOWLIST
               value: github.com/DirektorBani/* # 2. Replace this with your own repo allowlist.
-
+            - name: ATLANTIS_ATLANTIS_URL
+              value: https://158.160.51.121/basepath
             ### GitHub Config ###
             - name: ATLANTIS_GH_USER
               value: "DirektorBani" # 3i. If you're using GitHub replace <YOUR_GITHUB_USER> with the username of your Atlantis GitHub user without the `@`.
@@ -70,7 +71,7 @@ kind: Service
 metadata:
   name: atlantis
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
     - name: atlantis
       port: 80
