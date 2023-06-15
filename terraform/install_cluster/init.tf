@@ -10,8 +10,8 @@ terraform {
     bucket     = "neto-terraform"
     region     = "ru-central1"
     key        = "neto-terraform/neto-terraform.tfstate"
-    access_key = "YCAJETj6Crysd3j5a3p0d-pVn"
-    secret_key = "YCPGu4flD9598V0LGCsI84eZie562agmqiCgmh3u"
+    access_key = "*****"
+    secret_key = "****"
 
     skip_region_validation      = true
     skip_credentials_validation = true
