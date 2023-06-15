@@ -10,8 +10,8 @@ terraform {
     bucket     = "neto-terraform"
     region     = "ru-central1"
     key        = "neto-terraform/neto-terraform.tfstate"
-    access_key = "***"
-    secret_key = "***"
+    access_key = "YCAJETj6Crysd3j5a3p0d-pVn"
+    secret_key = "YCPGu4flD9598V0LGCsI84eZie562agmqiCgmh3u"
 
     skip_region_validation      = true
     skip_credentials_validation = true
@@ -155,4 +155,3 @@ output "external_ip_address_vm_2" {
 output "external_ip_address_vm_3" {
   value = yandex_compute_instance.vm-3.network_interface.0.nat_ip_address
 }
-
